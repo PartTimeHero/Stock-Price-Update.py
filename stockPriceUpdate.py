@@ -5,6 +5,7 @@ Created on Sun Aug 18 21:13:35 2019
 @author: Ary
 """
 # imports Beautiful Soup module
+# builds off of a Youtube tutorial I found
 import bs4
 
 # imports requests 
@@ -13,7 +14,7 @@ import requests
 # imports Beautiful Soup
 from bs4 import BeautifulSoup
 
-# loop that grabs the price from Yahoo page element, then returns price
+# loop grabs div item-class for price, declares variable, returns current price 
 def parsePrice():
     r=requests.get('https://finance.yahoo.com/quote/FB?p=FB')
     soup=bs4.BeautifulSoup(r.text, "xml")
