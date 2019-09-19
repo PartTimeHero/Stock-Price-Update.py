@@ -5,7 +5,6 @@ Created on Sun Aug 18 21:13:35 2019
 @author: Ary
 """
 # imports Beautiful Soup module
-# builds off of a Youtube tutorial I found
 import bs4
 
 # imports requests 
